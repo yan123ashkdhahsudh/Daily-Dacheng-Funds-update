@@ -1,0 +1,101 @@
+{
+  "title": "大成·招行重点持营业绩速览",
+  "asOf": "2026.6.30",
+  "source": "东方财富公开数据 / 同花顺公开页检测",
+  "sourceUrl": "https://www.10jqka.com.cn",
+  "updatedAt": "2026-07-06 13:07",
+  "groups": [
+    {
+      "label": "重点持营固收加",
+      "items": [
+        {
+          "name": "大成丰享回报",
+          "dailyReturn": -0.12
+        },
+        {
+          "name": "大成优享6个月",
+          "dailyReturn": 0.09
+        },
+        {
+          "name": "大成安享得利",
+          "dailyReturn": 0.04
+        }
+      ]
+    },
+    {
+      "label": "启明星权益",
+      "items": [
+        {
+          "name": "大成洞察优势",
+          "dailyReturn": -0.87
+        }
+      ]
+    },
+    {
+      "label": "徐彦权益系列",
+      "items": [
+        {
+          "name": "大成卓远视野",
+          "dailyReturn": -0.51
+        }
+      ]
+    },
+    {
+      "label": "重点固收+",
+      "items": [
+        {
+          "name": "大成元辰招利",
+          "dailyReturn": 0.03
+        },
+        {
+          "name": "大成元丰多利",
+          "dailyReturn": 0.04
+        }
+      ]
+    },
+    {
+      "label": "刘旭权益系列",
+      "items": [
+        {
+          "name": "大成高鑫股票",
+          "dailyReturn": -1.0
+        },
+        {
+          "name": "大成优势企业",
+          "dailyReturn": -1.04
+        }
+      ]
+    }
+  ],
+  "featured": [
+    {
+      "name": "大成绩优科技基",
+      "dailyReturn": null,
+      "headline": true
+    },
+    {
+      "name": "大成科技创新",
+      "dailyReturn": 2.51,
+      "yearToDate": 129.55
+    },
+    {
+      "name": "大成至臻回报",
+      "dailyReturn": 3.3,
+      "yearToDate": 103.64
+    }
+  ],
+  "indexes": [
+    {
+      "name": "上证指数",
+      "dailyReturn": 0.5
+    },
+    {
+      "name": "沪深300",
+      "dailyReturn": 1.07
+    },
+    {
+      "name": "创业板指",
+      "dailyReturn": 2.99
+    }
+  ]
+}
