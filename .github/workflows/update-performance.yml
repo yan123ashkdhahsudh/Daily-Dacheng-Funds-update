@@ -1,5 +1,45 @@
 name: Update and deploy site
 
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 13 * * *"
+
+  push:
+    branches: ["main"]
+
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Update data
+        run: python scripts/update_daily_data.py
+      - name: Commit changed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/performance.jsonname: Update and deploy site
+
 on:
   workflow_dispatch:
   schedule:
