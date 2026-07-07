@@ -9,51 +9,78 @@ from urllib.error import URLError
 from zoneinfo import ZoneInfo
 
 
-TITLE = "大成·招行重点持营业绩速览"
-SOURCE = "东方财富公开数据 / 同花顺公开页检测"
-SOURCE_URL = "https://www.10jqka.com.cn"
+SOURCE = "wind"
+SOURCE_URL = "https://www.wind.com.cn"
 
-GROUPS = [
+BANKS = [
     {
-        "label": "重点持营固收加",
-        "items": [
-            ("大成丰享回报", "009653"),
-            ("大成优享6个月", "026037"),
-            ("大成安享得利", "010940"),
+        "id": "cmb",
+        "name": "招行",
+        "title": "大成·招行重点持营业绩速览",
+        "groups": [
+            {
+                "label": "重点持营固收加",
+                "items": [
+                    {"name": "大成丰享回报", "code": "009653"},
+                    {"name": "大成优享6个月", "code": "026037"},
+                    {"name": "大成安享得利", "code": "010940"},
+                ],
+            },
+            {"label": "启明星权益", "items": [{"name": "大成洞察优势", "code": "024406"}]},
+            {"label": "徐彦权益系列", "items": [{"name": "大成卓远视野", "code": "017669"}]},
+            {
+                "label": "重点固收+",
+                "items": [
+                    {"name": "大成元辰招利", "code": "020676"},
+                    {"name": "大成元丰多利", "code": "019372"},
+                ],
+            },
+            {
+                "label": "刘旭权益系列",
+                "items": [
+                    {"name": "大成高鑫股票", "code": "000628"},
+                    {"name": "大成优势企业", "code": "008271"},
+                ],
+            },
+        ],
+        "featured": [
+            {"name": "大成绩优科技基", "headline": True},
+            {"name": "大成科技创新", "code": "008988", "ytd": True},
+            {"name": "大成至臻回报", "code": "024469", "ytd": True},
         ],
     },
     {
-        "label": "启明星权益",
-        "items": [
-            ("大成洞察优势", "024406"),
+        "id": "icbc",
+        "name": "工行",
+        "title": "大成·工行重点持营业绩速览",
+        "groups": [
+            {
+                "label": "次新基金",
+                "items": [
+                    {"manager": "郭玮羚", "name": "大成竞先成长", "code": "026486"},
+                    {"manager": "杜聪", "name": "大成至臻回报", "code": "024469"},
+                    {"manager": "韩创", "name": "大成创优鑫选", "code": "018862"},
+                    {"manager": "刘淼", "name": "大成创业板50", "code": "024920"},
+                ],
+            },
+            {
+                "label": "大成绩优权益持营",
+                "items": [
+                    {"manager": "刘旭", "name": "大成核心价值甄选", "code": "010929"},
+                    {"manager": "韩创", "name": "大成国企改革", "code": "002258"},
+                    {"manager": "徐彦", "name": "大成竞争优势", "code": "090013"},
+                ],
+            },
+            {
+                "label": "大成重点二发固收加",
+                "items": [
+                    {"manager": "徐雄晖", "name": "大成元吉", "code": "010927"},
+                    {"manager": "徐雄晖", "name": "大成汇享", "code": "009796"},
+                ],
+            },
         ],
+        "featured": [],
     },
-    {
-        "label": "徐彦权益系列",
-        "items": [
-            ("大成卓远视野", "017669"),
-        ],
-    },
-    {
-        "label": "重点固收+",
-        "items": [
-            ("大成元辰招利", "020676"),
-            ("大成元丰多利", "019372"),
-        ],
-    },
-    {
-        "label": "刘旭权益系列",
-        "items": [
-            ("大成高鑫股票", "000628"),
-            ("大成优势企业", "008271"),
-        ],
-    },
-]
-
-FEATURED = [
-    {"name": "大成绩优科技基", "headline": True},
-    {"name": "大成科技创新", "code": "008988"},
-    {"name": "大成至臻回报", "code": "024469"},
 ]
 
 INDEXES = [
@@ -95,11 +122,12 @@ def fund_rows(code, start_date="", end_date="", page_size=30):
 
 
 def all_fund_codes():
-    codes = []
-    for group in GROUPS:
-        codes.extend(code for _, code in group["items"])
-    codes.extend(item["code"] for item in FEATURED if "code" in item)
-    return codes
+    codes = set()
+    for bank in BANKS:
+        for group in bank["groups"]:
+            codes.update(item["code"] for item in group["items"])
+        codes.update(item["code"] for item in bank.get("featured", []) if "code" in item)
+    return sorted(codes)
 
 
 def choose_latest_common_date():
@@ -190,39 +218,43 @@ def display_date(date_text):
     return f"{date.year}.{date.month}.{date.day}"
 
 
-def build_payload(target_date):
+def display_item(item):
+    payload = {"name": item["name"]}
+    if item.get("manager"):
+        payload["manager"] = item["manager"]
+    return payload
+
+
+def build_bank_payload(bank, target_date, indexes, now):
     payload_groups = []
-    for group in GROUPS:
+    for group in bank["groups"]:
         items = []
-        for name, code in group["items"]:
-            row = fund_row_on_or_before(code, target_date)
-            items.append({"name": name, "dailyReturn": round(float(row["JZZZL"]), 2)})
+        for item in group["items"]:
+            row = fund_row_on_or_before(item["code"], target_date)
+            payload = display_item(item)
+            payload["dailyReturn"] = round(float(row["JZZZL"]), 2)
+            items.append(payload)
         payload_groups.append({"label": group["label"], "items": items})
 
     featured = []
-    for item in FEATURED:
+    for item in bank.get("featured", []):
         if item.get("headline"):
             featured.append({"name": item["name"], "dailyReturn": None, "headline": True})
             continue
         row = fund_row_on_or_before(item["code"], target_date)
         nav = float(row["DWJZ"])
-        payload = {
-            "name": item["name"],
-            "dailyReturn": round(float(row["JZZZL"]), 2),
-        }
-        ytd = ytd_return(item["code"], target_date, nav)
-        if ytd is not None:
-            payload["yearToDate"] = ytd
+        payload = display_item(item)
+        payload["dailyReturn"] = round(float(row["JZZZL"]), 2)
+        if item.get("ytd"):
+            ytd = ytd_return(item["code"], target_date, nav)
+            if ytd is not None:
+                payload["yearToDate"] = ytd
         featured.append(payload)
 
-    indexes = [
-        {"name": name, "dailyReturn": index_return(secid, fallback_symbol, target_date)}
-        for name, secid, fallback_symbol in INDEXES
-    ]
-
-    now = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M")
     return {
-        "title": TITLE,
+        "id": bank["id"],
+        "name": bank["name"],
+        "title": bank["title"],
         "asOf": display_date(target_date),
         "source": SOURCE,
         "sourceUrl": SOURCE_URL,
@@ -230,6 +262,20 @@ def build_payload(target_date):
         "groups": payload_groups,
         "featured": featured,
         "indexes": indexes,
+    }
+
+
+def build_payload(target_date):
+    now = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y-%m-%d %H:%M")
+    indexes = [
+        {"name": name, "dailyReturn": index_return(secid, fallback_symbol, target_date)}
+        for name, secid, fallback_symbol in INDEXES
+    ]
+    banks = [build_bank_payload(bank, target_date, indexes, now) for bank in BANKS]
+    return {
+        "version": 2,
+        "defaultBank": "cmb",
+        "banks": banks,
     }
 
 
@@ -245,7 +291,7 @@ def main():
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Updated {out_path} with data as of {payload['asOf']}")
+    print(f"Updated {out_path} with data as of {display_date(target_date)}")
 
 
 if __name__ == "__main__":
