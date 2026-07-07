@@ -61,6 +61,31 @@
       white-space: nowrap;
     }
 
+    .bank-switcher {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .bank-switcher select {
+      min-width: 168px;
+      height: 40px;
+      border: 1px solid #caa16e;
+      border-radius: 6px;
+      padding: 0 34px 0 12px;
+      color: #5b2a0d;
+      background: #fffaf2;
+      font: inherit;
+      font-weight: 800;
+    }
+
     .board {
       overflow: hidden;
       border: 1px solid var(--line);
@@ -308,6 +333,10 @@
         width: 100%;
       }
 
+      .bank-switcher select {
+        width: 100%;
+      }
+
       .copy-actions {
         width: 100%;
       }
@@ -326,6 +355,10 @@
     <header>
       <h1 id="title">大成·招行重点持营业绩速览</h1>
       <div class="stars">┈┈┈★★★★★ ┈┈┈</div>
+      <label class="bank-switcher" for="bankSelect">
+        选择银行
+        <select id="bankSelect" aria-label="选择银行"></select>
+      </label>
     </header>
 
     <section class="board" aria-live="polite">
@@ -357,9 +390,12 @@
     const content = document.getElementById("content");
     const footer = document.getElementById("footer");
     const refresh = document.getElementById("refresh");
+    const bankSelect = document.getElementById("bankSelect");
     const copyWechat = document.getElementById("copyWechat");
     const wechatText = document.getElementById("wechatText");
     let latestWechatText = "";
+    let latestPayload = null;
+    let selectedBankId = new URLSearchParams(window.location.search).get("bank") || localStorage.getItem("selectedBank") || "";
 
     function signedPercent(value) {
       if (value === null || value === undefined || value === "") return "";
@@ -370,6 +406,10 @@
 
     function valueClass(value) {
       return Number(value) < 0 ? "value negative" : "value";
+    }
+
+    function itemLabel(item) {
+      return item.manager ? `${item.manager}｜${item.name}` : item.name;
     }
 
     function escapeHtml(value) {
@@ -384,7 +424,7 @@
     function renderGroup(group) {
       const items = group.items.map((item) => `
         <li class="item">
-          <span class="item-name">${escapeHtml(item.name)}</span>
+          <span class="item-name">${escapeHtml(itemLabel(item))}</span>
           <span class="${valueClass(item.dailyReturn)}">${signedPercent(item.dailyReturn)}</span>
         </li>
       `).join("");
@@ -442,7 +482,7 @@
       (data.groups || []).forEach((group) => {
         lines.push(`🏆＃${group.label}`);
         (group.items || []).forEach((item) => {
-          lines.push(`🔹${item.name}${signedPercent(item.dailyReturn)}`);
+          lines.push(`🔹${itemLabel(item)}${signedPercent(item.dailyReturn)}`);
         });
       });
 
@@ -453,7 +493,7 @@
             lines.push(`🟥${item.name}🟥`);
             return;
           }
-          lines.push(`🟥${item.name}${signedPercent(item.dailyReturn)}`);
+          lines.push(`🟥${itemLabel(item)}${signedPercent(item.dailyReturn)}`);
           if (item.yearToDate !== undefined && item.yearToDate !== null) {
             lines.push(`📈今年以来➕${Number(item.yearToDate).toFixed(2)}%💥`);
           }
@@ -472,16 +512,45 @@
       return lines.join("\n");
     }
 
+    function normalizePayload(payload) {
+      if (Array.isArray(payload.banks)) return payload;
+      return {
+        version: 1,
+        defaultBank: "cmb",
+        banks: [{ ...payload, id: "cmb", name: "招行" }]
+      };
+    }
+
+    function bankFromPayload(payload) {
+      const normalized = normalizePayload(payload);
+      const bank = normalized.banks.find((item) => item.id === selectedBankId)
+        || normalized.banks.find((item) => item.id === normalized.defaultBank)
+        || normalized.banks[0];
+      selectedBankId = bank?.id || "";
+      return bank;
+    }
+
+    function renderBankOptions(payload) {
+      const normalized = normalizePayload(payload);
+      bankSelect.innerHTML = normalized.banks.map((bank) => (
+        `<option value="${escapeHtml(bank.id)}">${escapeHtml(bank.name)}</option>`
+      )).join("");
+      bankSelect.value = selectedBankId || normalized.defaultBank || normalized.banks[0]?.id || "";
+    }
+
     function render(data) {
-      title.textContent = data.title || "大成·招行重点持营业绩速览";
+      latestPayload = normalizePayload(data);
+      const bank = bankFromPayload(latestPayload);
+      renderBankOptions(latestPayload);
+      title.textContent = bank.title || "大成·招行重点持营业绩速览";
       content.innerHTML = [
-        ...(data.groups || []).map(renderGroup),
-        renderFeatured(data.featured || []),
-        renderIndexes(data.indexes || [])
+        ...(bank.groups || []).map(renderGroup),
+        renderFeatured(bank.featured || []),
+        renderIndexes(bank.indexes || [])
       ].join("");
-      status.textContent = `数据日期：${data.asOf || "-"}　更新时间：${data.updatedAt || "-"}`;
-      footer.textContent = `（⚠️数据来源：${data.source || "wind"}，截至${data.asOf || "-"}，基金有风险，投资需谨慎）`;
-      latestWechatText = buildWechatText(data);
+      status.textContent = `数据日期：${bank.asOf || "-"}　更新时间：${bank.updatedAt || "-"}`;
+      footer.textContent = `（⚠️数据来源：${bank.source || "wind"}，截至${bank.asOf || "-"}，基金有风险，投资需谨慎）`;
+      latestWechatText = buildWechatText(bank);
       wechatText.textContent = latestWechatText;
     }
 
@@ -500,6 +569,15 @@
       } finally {
         refresh.disabled = false;
       }
+    }
+
+    function switchBank() {
+      selectedBankId = bankSelect.value;
+      localStorage.setItem("selectedBank", selectedBankId);
+      const url = new URL(window.location.href);
+      url.searchParams.set("bank", selectedBankId);
+      window.history.replaceState({}, "", url);
+      if (latestPayload) render(latestPayload);
     }
 
     async function copyWechatText() {
@@ -527,6 +605,7 @@
     }
 
     refresh.addEventListener("click", loadData);
+    bankSelect.addEventListener("change", switchBank);
     copyWechat.addEventListener("click", copyWechatText);
     loadData();
     setInterval(loadData, 24 * 60 * 60 * 1000);
