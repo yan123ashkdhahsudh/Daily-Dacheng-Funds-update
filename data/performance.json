@@ -1,24 +1,24 @@
 {
   "title": "大成·招行重点持营业绩速览",
-  "asOf": "2026.7.3",
+  "asOf": "2026.7.6",
   "source": "东方财富公开数据 / 同花顺公开页检测",
   "sourceUrl": "https://www.10jqka.com.cn",
-  "updatedAt": "2026-07-06 14:41",
+  "updatedAt": "2026-07-07 10:23",
   "groups": [
     {
       "label": "重点持营固收加",
       "items": [
         {
           "name": "大成丰享回报",
-          "dailyReturn": 0.15
+          "dailyReturn": 0.07
         },
         {
           "name": "大成优享6个月",
-          "dailyReturn": 0.2
+          "dailyReturn": 0.03
         },
         {
           "name": "大成安享得利",
-          "dailyReturn": 0.09
+          "dailyReturn": 0.0
         }
       ]
     },
@@ -27,7 +27,7 @@
       "items": [
         {
           "name": "大成洞察优势",
-          "dailyReturn": 0.53
+          "dailyReturn": 1.18
         }
       ]
     },
@@ -36,7 +36,7 @@
       "items": [
         {
           "name": "大成卓远视野",
-          "dailyReturn": 0.85
+          "dailyReturn": 0.27
         }
       ]
     },
@@ -45,11 +45,11 @@
       "items": [
         {
           "name": "大成元辰招利",
-          "dailyReturn": 0.2
+          "dailyReturn": 0.03
         },
         {
           "name": "大成元丰多利",
-          "dailyReturn": 0.19
+          "dailyReturn": -0.02
         }
       ]
     },
@@ -58,11 +58,11 @@
       "items": [
         {
           "name": "大成高鑫股票",
-          "dailyReturn": 1.74
+          "dailyReturn": 0.93
         },
         {
           "name": "大成优势企业",
-          "dailyReturn": 1.63
+          "dailyReturn": 0.96
         }
       ]
     }
@@ -75,27 +75,27 @@
     },
     {
       "name": "大成科技创新",
-      "dailyReturn": 1.11,
-      "yearToDate": 107.76
+      "dailyReturn": -5.51,
+      "yearToDate": 96.33
     },
     {
       "name": "大成至臻回报",
-      "dailyReturn": -0.66,
-      "yearToDate": 85.84
+      "dailyReturn": -3.13,
+      "yearToDate": 80.02
     }
   ],
   "indexes": [
     {
       "name": "上证指数",
-      "dailyReturn": 0.37
+      "dailyReturn": -0.06
     },
     {
       "name": "沪深300",
-      "dailyReturn": 0.62
+      "dailyReturn": 0.0
     },
     {
       "name": "创业板指",
-      "dailyReturn": 0.07
+      "dailyReturn": -1.77
     }
   ]
 }
