@@ -1,101 +1,195 @@
 {
-  "title": "大成·招行重点持营业绩速览",
-  "asOf": "2026.7.6",
-  "source": "东方财富公开数据 / 同花顺公开页检测",
-  "sourceUrl": "https://www.10jqka.com.cn",
-  "updatedAt": "2026-07-07 10:23",
-  "groups": [
+  "version": 2,
+  "defaultBank": "cmb",
+  "banks": [
     {
-      "label": "重点持营固收加",
-      "items": [
+      "id": "cmb",
+      "name": "招行",
+      "title": "大成·招行重点持营业绩速览",
+      "asOf": "2026.7.6",
+      "source": "wind",
+      "sourceUrl": "https://www.wind.com.cn",
+      "updatedAt": "2026-07-07 10:50",
+      "groups": [
         {
-          "name": "大成丰享回报",
-          "dailyReturn": 0.07
+          "label": "重点持营固收加",
+          "items": [
+            {
+              "name": "大成丰享回报",
+              "dailyReturn": 0.07
+            },
+            {
+              "name": "大成优享6个月",
+              "dailyReturn": 0.03
+            },
+            {
+              "name": "大成安享得利",
+              "dailyReturn": 0.0
+            }
+          ]
         },
         {
-          "name": "大成优享6个月",
-          "dailyReturn": 0.03
+          "label": "启明星权益",
+          "items": [
+            {
+              "name": "大成洞察优势",
+              "dailyReturn": 1.18
+            }
+          ]
         },
         {
-          "name": "大成安享得利",
+          "label": "徐彦权益系列",
+          "items": [
+            {
+              "name": "大成卓远视野",
+              "dailyReturn": 0.27
+            }
+          ]
+        },
+        {
+          "label": "重点固收+",
+          "items": [
+            {
+              "name": "大成元辰招利",
+              "dailyReturn": 0.03
+            },
+            {
+              "name": "大成元丰多利",
+              "dailyReturn": -0.02
+            }
+          ]
+        },
+        {
+          "label": "刘旭权益系列",
+          "items": [
+            {
+              "name": "大成高鑫股票",
+              "dailyReturn": 0.93
+            },
+            {
+              "name": "大成优势企业",
+              "dailyReturn": 0.96
+            }
+          ]
+        }
+      ],
+      "featured": [
+        {
+          "name": "大成绩优科技基",
+          "dailyReturn": null,
+          "headline": true
+        },
+        {
+          "name": "大成科技创新",
+          "dailyReturn": -5.51,
+          "yearToDate": 96.33
+        },
+        {
+          "name": "大成至臻回报",
+          "dailyReturn": -3.13,
+          "yearToDate": 80.02
+        }
+      ],
+      "indexes": [
+        {
+          "name": "上证指数",
+          "dailyReturn": -0.06
+        },
+        {
+          "name": "沪深300",
           "dailyReturn": 0.0
-        }
-      ]
-    },
-    {
-      "label": "启明星权益",
-      "items": [
-        {
-          "name": "大成洞察优势",
-          "dailyReturn": 1.18
-        }
-      ]
-    },
-    {
-      "label": "徐彦权益系列",
-      "items": [
-        {
-          "name": "大成卓远视野",
-          "dailyReturn": 0.27
-        }
-      ]
-    },
-    {
-      "label": "重点固收+",
-      "items": [
-        {
-          "name": "大成元辰招利",
-          "dailyReturn": 0.03
         },
         {
-          "name": "大成元丰多利",
-          "dailyReturn": -0.02
+          "name": "创业板指",
+          "dailyReturn": -1.77
         }
       ]
     },
     {
-      "label": "刘旭权益系列",
-      "items": [
+      "id": "icbc",
+      "name": "工行",
+      "title": "大成·工行重点持营业绩速览",
+      "asOf": "2026.7.6",
+      "source": "wind",
+      "sourceUrl": "https://www.wind.com.cn",
+      "updatedAt": "2026-07-07 10:50",
+      "groups": [
         {
-          "name": "大成高鑫股票",
-          "dailyReturn": 0.93
+          "label": "次新基金",
+          "items": [
+            {
+              "name": "大成竞先成长",
+              "manager": "郭玮羚",
+              "dailyReturn": -5.03
+            },
+            {
+              "name": "大成至臻回报",
+              "manager": "杜聪",
+              "dailyReturn": -3.13
+            },
+            {
+              "name": "大成创优鑫选",
+              "manager": "韩创",
+              "dailyReturn": -0.25
+            },
+            {
+              "name": "大成创业板50",
+              "manager": "刘淼",
+              "dailyReturn": -1.73
+            }
+          ]
         },
         {
-          "name": "大成优势企业",
-          "dailyReturn": 0.96
+          "label": "大成绩优权益持营",
+          "items": [
+            {
+              "name": "大成核心价值甄选",
+              "manager": "刘旭",
+              "dailyReturn": 0.58
+            },
+            {
+              "name": "大成国企改革",
+              "manager": "韩创",
+              "dailyReturn": -0.78
+            },
+            {
+              "name": "大成竞争优势",
+              "manager": "徐彦",
+              "dailyReturn": 0.45
+            }
+          ]
+        },
+        {
+          "label": "大成重点二发固收加",
+          "items": [
+            {
+              "name": "大成元吉",
+              "manager": "徐雄晖",
+              "dailyReturn": 0.05
+            },
+            {
+              "name": "大成汇享",
+              "manager": "徐雄晖",
+              "dailyReturn": 0.04
+            }
+          ]
+        }
+      ],
+      "featured": [],
+      "indexes": [
+        {
+          "name": "上证指数",
+          "dailyReturn": -0.06
+        },
+        {
+          "name": "沪深300",
+          "dailyReturn": 0.0
+        },
+        {
+          "name": "创业板指",
+          "dailyReturn": -1.77
         }
       ]
-    }
-  ],
-  "featured": [
-    {
-      "name": "大成绩优科技基",
-      "dailyReturn": null,
-      "headline": true
-    },
-    {
-      "name": "大成科技创新",
-      "dailyReturn": -5.51,
-      "yearToDate": 96.33
-    },
-    {
-      "name": "大成至臻回报",
-      "dailyReturn": -3.13,
-      "yearToDate": 80.02
-    }
-  ],
-  "indexes": [
-    {
-      "name": "上证指数",
-      "dailyReturn": -0.06
-    },
-    {
-      "name": "沪深300",
-      "dailyReturn": 0.0
-    },
-    {
-      "name": "创业板指",
-      "dailyReturn": -1.77
     }
   ]
 }
