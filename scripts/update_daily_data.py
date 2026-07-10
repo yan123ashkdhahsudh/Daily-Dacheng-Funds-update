@@ -175,6 +175,12 @@ def note_suffix(note):
     return f"（{match.group(1).strip()}）"
 
 
+def stale_data_suffix(value, target_date):
+    if value.get("date") and value.get("date") != target_date:
+        return "（数据未更新）"
+    return ""
+
+
 def template_indexes(templates):
     fund_by_bank_group = defaultdict(deque)
     for row in sorted(templates["fundRows"], key=lambda item: item["fund_order"]):
@@ -222,6 +228,7 @@ def render_bank(bank, templates, fund_values, index_values, target_date, now):
             value = fund_values.get(fund.get("fund_code"), {})
             text = text.replace("{daily_return}", signed_percent(value.get("daily")))
             text += note_suffix(fund.get("note", ""))
+            text += stale_data_suffix(value, target_date)
             last_fund = {**fund, **value}
         elif line_type == "featured_ytd":
             period = None
