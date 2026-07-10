@@ -3,7 +3,11 @@ name: Update performance data
 on:
   workflow_dispatch:
   schedule:
+    # GitHub cron uses UTC. These run at 21:10, 22:10, 23:10 and 00:10 Beijing time.
     - cron: "10 13 * * *"
+    - cron: "10 14 * * *"
+    - cron: "10 15 * * *"
+    - cron: "10 16 * * *"
 
 permissions:
   contents: write
@@ -12,8 +16,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
       - name: Update data
