@@ -2213,28 +2213,12 @@
       "line_order": 261,
       "line_type": "featured_item",
       "group_name": "大成绩优科技基",
-      "template_text": "🟥大成科技创新{daily_return}",
+      "template_text": "🟥大成科创主题{daily_return}",
       "note": ""
     },
     {
       "bank_id": "ccb",
       "line_order": 262,
-      "line_type": "featured_ytd",
-      "group_name": "大成绩优科技基",
-      "template_text": "📈今年以来➕{period_return}💥",
-      "note": ""
-    },
-    {
-      "bank_id": "ccb",
-      "line_order": 263,
-      "line_type": "featured_item",
-      "group_name": "大成绩优科技基",
-      "template_text": "🟥大成至臻回报{daily_return}",
-      "note": ""
-    },
-    {
-      "bank_id": "ccb",
-      "line_order": 264,
       "line_type": "featured_ytd",
       "group_name": "大成绩优科技基",
       "template_text": "📈今年以来➕{period_return}💥",
@@ -3638,21 +3622,8 @@
       "fund_order": 92,
       "group_name": "大成绩优科技基",
       "manager": "",
-      "fund_name": "大成科技创新",
-      "fund_code": "008988",
-      "line_prefix": "🟥",
-      "update_method": "auto_return",
-      "period_label": "今年以来",
-      "metric_type": "daily_return",
-      "note": ""
-    },
-    {
-      "bank_id": "ccb",
-      "fund_order": 93,
-      "group_name": "大成绩优科技基",
-      "manager": "",
-      "fund_name": "大成至臻回报",
-      "fund_code": "024469",
+      "fund_name": "大成科创主题",
+      "fund_code": "501079",
       "line_prefix": "🟥",
       "update_method": "auto_return",
       "period_label": "今年以来",
