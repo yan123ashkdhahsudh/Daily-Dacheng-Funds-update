@@ -9,7 +9,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -94,7 +94,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -199,7 +199,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -284,7 +284,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -361,7 +361,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -418,7 +418,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "fund_item",
@@ -455,7 +455,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -512,7 +512,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -561,7 +561,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "featured_header",
@@ -646,7 +646,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -707,7 +707,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -772,7 +772,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -829,7 +829,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -902,7 +902,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -971,7 +971,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -1044,7 +1044,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -1060,19 +1060,11 @@
         },
         {
           "type": "featured_item",
-          "text": "🟥大成科技创新-5.90%"
+          "text": "🟥大成科创主题-5.91%"
         },
         {
           "type": "featured_ytd",
-          "text": "📈今年以来➕86.07%💥"
-        },
-        {
-          "type": "featured_item",
-          "text": "🟥大成至臻回报-5.26%"
-        },
-        {
-          "type": "featured_ytd",
-          "text": "📈今年以来➕76.93%💥"
+          "text": "📈今年以来➕83.11%💥"
         },
         {
           "type": "divider",
@@ -1092,7 +1084,7 @@
         }
       ],
       "footer": "（⚠️数据来源：wind，截至2026.7.10，基金有风险，投资需谨慎）",
-      "wechatText": "⭕️ 大成·建行重点推荐产品业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆#大成重点产品\n刘旭｜大成启元价值+0.05%\n🟥大成绩优科技基🟥\n🟥大成科技创新-5.90%\n📈今年以来➕86.07%💥\n🟥大成至臻回报-5.26%\n📈今年以来➕76.93%💥\n—————\n【上证指数】 今日-1.00%\n【沪深300】 今日-1.96%\n【创业板指】 今日-4.37%\n（⚠️数据来源：wind，截至2026.7.10，基金有风险，投资需谨慎）"
+      "wechatText": "⭕️ 大成·建行重点推荐产品业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆#大成重点产品\n刘旭｜大成启元价值+0.05%\n🟥大成绩优科技基🟥\n🟥大成科创主题-5.91%\n📈今年以来➕83.11%💥\n—————\n【上证指数】 今日-1.00%\n【沪深300】 今日-1.96%\n【创业板指】 今日-4.37%\n（⚠️数据来源：wind，截至2026.7.10，基金有风险，投资需谨慎）"
     },
     {
       "id": "jsb",
@@ -1101,7 +1093,7 @@
       "asOf": "2026.7.10",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "group",
@@ -1150,7 +1142,7 @@
       "asOf": "2026.7.10",
       "source": "Wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-12 22:37",
+      "updatedAt": "2026-07-13 16:49",
       "lines": [
         {
           "type": "note",
