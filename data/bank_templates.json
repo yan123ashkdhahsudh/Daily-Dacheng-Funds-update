@@ -875,6 +875,14 @@
     {
       "bank_id": "pingan",
       "line_order": 94,
+      "line_type": "fund_item",
+      "group_name": "大成权益持营",
+      "template_text": "大成科技创新{daily_return}",
+      "note": ""
+    },
+    {
+      "bank_id": "pingan",
+      "line_order": 95,
       "line_type": "group",
       "group_name": "大成固收持营",
       "template_text": "🏆#大成固收持营",
@@ -882,7 +890,7 @@
     },
     {
       "bank_id": "pingan",
-      "line_order": 95,
+      "line_order": 96,
       "line_type": "fund_item",
       "group_name": "大成固收持营",
       "template_text": "孙丹｜大成景尚{daily_return}",
@@ -890,7 +898,7 @@
     },
     {
       "bank_id": "pingan",
-      "line_order": 96,
+      "line_order": 97,
       "line_type": "fund_item",
       "group_name": "大成固收持营",
       "template_text": "徐雄晖｜大成荣享{daily_return}",
@@ -898,7 +906,7 @@
     },
     {
       "bank_id": "pingan",
-      "line_order": 97,
+      "line_order": 98,
       "line_type": "divider",
       "group_name": "",
       "template_text": "—————",
@@ -906,7 +914,7 @@
     },
     {
       "bank_id": "pingan",
-      "line_order": 98,
+      "line_order": 99,
       "line_type": "index",
       "group_name": "",
       "template_text": "【上证指数】 今日{index_return}",
@@ -914,7 +922,7 @@
     },
     {
       "bank_id": "pingan",
-      "line_order": 99,
+      "line_order": 100,
       "line_type": "index",
       "group_name": "",
       "template_text": "【沪深300】 今日{index_return}",
@@ -922,7 +930,7 @@
     },
     {
       "bank_id": "pingan",
-      "line_order": 100,
+      "line_order": 101,
       "line_type": "index",
       "group_name": "",
       "template_text": "【创业板指】 今日{index_return}",
@@ -930,7 +938,7 @@
     },
     {
       "bank_id": "pingan",
-      "line_order": 101,
+      "line_order": 102,
       "line_type": "footer",
       "group_name": "",
       "template_text": "（⚠️数据来源：wind，截至{date}，基金有风险，投资需谨慎）",
@@ -1067,6 +1075,14 @@
     {
       "bank_id": "psbc",
       "line_order": 118,
+      "line_type": "fund_item",
+      "group_name": "大成权益持营",
+      "template_text": "大成科技创新{daily_return}",
+      "note": ""
+    },
+    {
+      "bank_id": "psbc",
+      "line_order": 119,
       "line_type": "group",
       "group_name": "大成固收持营",
       "template_text": "🏆#大成固收持营",
@@ -1074,7 +1090,7 @@
     },
     {
       "bank_id": "psbc",
-      "line_order": 119,
+      "line_order": 120,
       "line_type": "fund_item",
       "group_name": "大成固收持营",
       "template_text": "刘谢冰｜大成同业存单{daily_return}",
@@ -1082,7 +1098,7 @@
     },
     {
       "bank_id": "psbc",
-      "line_order": 120,
+      "line_order": 121,
       "line_type": "divider",
       "group_name": "",
       "template_text": "—————",
@@ -1090,7 +1106,7 @@
     },
     {
       "bank_id": "psbc",
-      "line_order": 121,
+      "line_order": 122,
       "line_type": "index",
       "group_name": "",
       "template_text": "【上证指数】 今日{index_return}",
@@ -1098,7 +1114,7 @@
     },
     {
       "bank_id": "psbc",
-      "line_order": 122,
+      "line_order": 123,
       "line_type": "index",
       "group_name": "",
       "template_text": "【沪深300】 今日{index_return}",
@@ -1106,7 +1122,7 @@
     },
     {
       "bank_id": "psbc",
-      "line_order": 123,
+      "line_order": 124,
       "line_type": "index",
       "group_name": "",
       "template_text": "【创业板指】 今日{index_return}",
@@ -1114,7 +1130,7 @@
     },
     {
       "bank_id": "psbc",
-      "line_order": 124,
+      "line_order": 125,
       "line_type": "footer",
       "group_name": "",
       "template_text": "（⚠️数据来源：wind，截至{date}，基金有风险，投资需谨慎）",
@@ -2944,6 +2960,19 @@
     {
       "bank_id": "pingan",
       "fund_order": 40,
+      "group_name": "大成权益持营",
+      "manager": "",
+      "fund_name": "大成科技创新",
+      "fund_code": "008988",
+      "line_prefix": "",
+      "update_method": "auto_return",
+      "period_label": "",
+      "metric_type": "daily_return",
+      "note": ""
+    },
+    {
+      "bank_id": "pingan",
+      "fund_order": 41,
       "group_name": "大成固收持营",
       "manager": "孙丹",
       "fund_name": "大成景尚",
@@ -2956,7 +2985,7 @@
     },
     {
       "bank_id": "pingan",
-      "fund_order": 41,
+      "fund_order": 42,
       "group_name": "大成固收持营",
       "manager": "徐雄晖",
       "fund_name": "大成荣享",
@@ -3035,6 +3064,19 @@
     {
       "bank_id": "psbc",
       "fund_order": 47,
+      "group_name": "大成权益持营",
+      "manager": "",
+      "fund_name": "大成科技创新",
+      "fund_code": "008988",
+      "line_prefix": "",
+      "update_method": "auto_return",
+      "period_label": "",
+      "metric_type": "daily_return",
+      "note": ""
+    },
+    {
+      "bank_id": "psbc",
+      "fund_order": 48,
       "group_name": "大成固收持营",
       "manager": "刘谢冰",
       "fund_name": "大成同业存单",
