@@ -9,7 +9,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -94,7 +94,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -199,7 +199,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -284,7 +284,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -361,7 +361,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -378,6 +378,10 @@
         {
           "type": "fund_item",
           "text": "冉凌浩｜大成恒生科技-0.98%"
+        },
+        {
+          "type": "fund_item",
+          "text": "大成科技创新-6.16%"
         },
         {
           "type": "group",
@@ -409,7 +413,7 @@
         }
       ],
       "footer": "（⚠️数据来源：wind，截至2026.7.13，基金有风险，投资需谨慎）",
-      "wechatText": "⭕️ 大成·平安银行重点业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆#大成权益持营\n刘旭｜大成高鑫股票+0.20%\n徐彦｜大成睿享混合-0.12%\n冉凌浩｜大成恒生科技-0.98%\n🏆#大成固收持营\n孙丹｜大成景尚-0.10%\n徐雄晖｜大成荣享-0.17%\n—————\n【上证指数】 今日-2.06%\n【沪深300】 今日-1.79%\n【创业板指】 今日-3.10%\n（⚠️数据来源：wind，截至2026.7.13，基金有风险，投资需谨慎）"
+      "wechatText": "⭕️ 大成·平安银行重点业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆#大成权益持营\n刘旭｜大成高鑫股票+0.20%\n徐彦｜大成睿享混合-0.12%\n冉凌浩｜大成恒生科技-0.98%\n大成科技创新-6.16%\n🏆#大成固收持营\n孙丹｜大成景尚-0.10%\n徐雄晖｜大成荣享-0.17%\n—————\n【上证指数】 今日-2.06%\n【沪深300】 今日-1.79%\n【创业板指】 今日-3.10%\n（⚠️数据来源：wind，截至2026.7.13，基金有风险，投资需谨慎）"
     },
     {
       "id": "minsheng",
@@ -418,7 +422,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "fund_item",
@@ -455,7 +459,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -476,6 +480,10 @@
         {
           "type": "fund_item",
           "text": "徐彦｜大成睿享混合-0.12%"
+        },
+        {
+          "type": "fund_item",
+          "text": "大成科技创新-6.16%"
         },
         {
           "type": "group",
@@ -503,7 +511,7 @@
         }
       ],
       "footer": "（⚠️数据来源：wind，截至2026.7.13，基金有风险，投资需谨慎）",
-      "wechatText": "⭕️ 大成·邮储重点持营业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆#重点二发\n方锐｜大成稳安60天0.00%\n🏆#大成权益持营\n刘旭｜大成高鑫股票+0.20%\n徐彦｜大成睿享混合-0.12%\n🏆#大成固收持营\n刘谢冰｜大成同业存单+0.01%\n—————\n【上证指数】 今日-2.06%\n【沪深300】 今日-1.79%\n【创业板指】 今日-3.10%\n（⚠️数据来源：wind，截至2026.7.13，基金有风险，投资需谨慎）"
+      "wechatText": "⭕️ 大成·邮储重点持营业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆#重点二发\n方锐｜大成稳安60天0.00%\n🏆#大成权益持营\n刘旭｜大成高鑫股票+0.20%\n徐彦｜大成睿享混合-0.12%\n大成科技创新-6.16%\n🏆#大成固收持营\n刘谢冰｜大成同业存单+0.01%\n—————\n【上证指数】 今日-2.06%\n【沪深300】 今日-1.79%\n【创业板指】 今日-3.10%\n（⚠️数据来源：wind，截至2026.7.13，基金有风险，投资需谨慎）"
     },
     {
       "id": "spdb",
@@ -512,7 +520,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -561,7 +569,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "featured_header",
@@ -646,7 +654,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -707,7 +715,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -772,7 +780,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -829,7 +837,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -902,7 +910,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -971,7 +979,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -1044,7 +1052,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -1093,7 +1101,7 @@
       "asOf": "2026.7.13",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "group",
@@ -1142,7 +1150,7 @@
       "asOf": "2026.7.13",
       "source": "Wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-13 23:10",
+      "updatedAt": "2026-07-14 15:42",
       "lines": [
         {
           "type": "note",
