@@ -550,7 +550,7 @@
       "line_type": "fund_item",
       "group_name": "首发产品",
       "template_text": "🔹大成港股恒信{daily_return}",
-      "note": "原文备注：7.3净值"
+      "note": ""
     },
     {
       "bank_id": "cmb_2",
@@ -1470,7 +1470,7 @@
       "line_type": "fund_item",
       "group_name": "重点二发产品",
       "template_text": "柏杨｜大成港股精选{daily_return}",
-      "note": "原文备注：7/3净值"
+      "note": ""
     },
     {
       "bank_id": "citic",
@@ -1830,7 +1830,7 @@
       "line_type": "fund_item",
       "group_name": "大成权益基金",
       "template_text": "柏杨｜大成港股精选{daily_return}",
-      "note": "原文备注：7/3净值"
+      "note": ""
     },
     {
       "bank_id": "nbcb",
@@ -2753,7 +2753,7 @@
       "update_method": "auto_return",
       "period_label": "",
       "metric_type": "daily_return",
-      "note": "原文备注：7.3净值"
+      "note": ""
     },
     {
       "bank_id": "cmb_2",
@@ -3299,7 +3299,7 @@
       "update_method": "auto_return",
       "period_label": "",
       "metric_type": "daily_return",
-      "note": "原文备注：7/3净值"
+      "note": ""
     },
     {
       "bank_id": "citic",
@@ -3468,7 +3468,7 @@
       "update_method": "auto_return",
       "period_label": "",
       "metric_type": "daily_return",
-      "note": "原文备注：7/3净值"
+      "note": ""
     },
     {
       "bank_id": "nbcb",
