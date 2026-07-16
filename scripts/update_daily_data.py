@@ -175,7 +175,14 @@ def note_suffix(note):
     return f"（{match.group(1).strip()}）"
 
 
-def stale_data_suffix(value, target_date):
+def is_hong_kong_fund(fund):
+    name = fund.get("fund_name", "")
+    return "港股" in name or "恒生" in name
+
+
+def stale_data_suffix(value, target_date, fund):
+    if is_hong_kong_fund(fund):
+        return ""
     if value.get("date") and value.get("date") != target_date:
         return "（数据未更新）"
     return ""
@@ -227,8 +234,9 @@ def render_bank(bank, templates, fund_values, index_values, target_date, now):
             fund = fund_queues[(bank["bank_id"], line["group_name"])].popleft()
             value = fund_values.get(fund.get("fund_code"), {})
             text = text.replace("{daily_return}", signed_percent(value.get("daily")))
-            text += note_suffix(fund.get("note", ""))
-            text += stale_data_suffix(value, target_date)
+            if not is_hong_kong_fund(fund):
+                text += note_suffix(fund.get("note", ""))
+            text += stale_data_suffix(value, target_date, fund)
             last_fund = {**fund, **value}
         elif line_type == "featured_ytd":
             period = None
