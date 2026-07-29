@@ -9,7 +9,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -94,7 +94,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -111,6 +111,10 @@
         {
           "type": "fund_item",
           "text": "🔹大成安享得利-0.14%"
+        },
+        {
+          "type": "fund_item",
+          "text": "🔹大成月添利0.00%"
         },
         {
           "type": "group",
@@ -190,24 +194,28 @@
         }
       ],
       "footer": "（⚠️数据来源：wind，截至2026.7.28，基金有风险，投资需谨慎）",
-      "wechatText": "⭕️ 大成·招行1重点持营业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆＃重点持营固收加\n🔹大成丰享回报-0.06%\n🔹大成优享6个月-0.26%\n🔹大成安享得利-0.14%\n🏆＃启明星权益\n🔹大成洞察优势+0.23%\n🏆#徐彦权益系列\n🔹大成卓远视野-0.29%\n🏆#重点固收+\n🔹大成元辰招利-0.19%\n🔹大成元丰多利-0.16%\n🏆＃刘旭权益系列\n🔹大成高鑫股票-0.13%\n🔹大成优势企业-0.30%\n🟥大成绩优科技基🟥\n🟥大成科技创新-10.23%\n📈今年以来➕44.94%💥\n🟥大成至臻回报-9.21%\n📈今年以来➕33.96%💥\n—————\n【上证指数】 今日-1.16%\n【沪深300】 今日-2.83%\n【创业板指】 今日-7.35%\n（⚠️数据来源：wind，截至2026.7.28，基金有风险，投资需谨慎）"
+      "wechatText": "⭕️ 大成·招行1重点持营业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆＃重点持营固收加\n🔹大成丰享回报-0.06%\n🔹大成优享6个月-0.26%\n🔹大成安享得利-0.14%\n🔹大成月添利0.00%\n🏆＃启明星权益\n🔹大成洞察优势+0.23%\n🏆#徐彦权益系列\n🔹大成卓远视野-0.29%\n🏆#重点固收+\n🔹大成元辰招利-0.19%\n🔹大成元丰多利-0.16%\n🏆＃刘旭权益系列\n🔹大成高鑫股票-0.13%\n🔹大成优势企业-0.30%\n🟥大成绩优科技基🟥\n🟥大成科技创新-10.23%\n📈今年以来➕44.94%💥\n🟥大成至臻回报-9.21%\n📈今年以来➕33.96%💥\n—————\n【上证指数】 今日-1.16%\n【沪深300】 今日-2.83%\n【创业板指】 今日-7.35%\n（⚠️数据来源：wind，截至2026.7.28，基金有风险，投资需谨慎）"
     },
     {
       "id": "cmb_2",
       "name": "招行2",
-      "title": "大成·招行2重点持营业绩速览",
+      "title": "大成·招行重点持营业绩速览",
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
-          "text": "🏆＃首发产品"
+          "text": "🏆#二发固收+"
         },
         {
           "type": "fund_item",
-          "text": "🔹大成洞察优势+0.23%"
+          "text": "🔹大成优享6个月-0.26%"
+        },
+        {
+          "type": "fund_item",
+          "text": "🔹大成安享得利6个月-0.14%"
         },
         {
           "type": "fund_item",
@@ -215,15 +223,19 @@
         },
         {
           "type": "fund_item",
-          "text": "🔹大成港股恒信+0.30%"
-        },
-        {
-          "type": "fund_item",
           "text": "🔹大成汇享一年-0.18%"
         },
         {
+          "type": "group",
+          "text": "🏆＃首发启明星"
+        },
+        {
           "type": "fund_item",
-          "text": "🔹大成优享6个月-0.26%"
+          "text": "🔹大成洞察优势+0.23%"
+        },
+        {
+          "type": "fund_item",
+          "text": "🔹大成港股恒信+0.30%"
         },
         {
           "type": "group",
@@ -238,16 +250,20 @@
           "text": "🔹大成优势企业-0.30%"
         },
         {
+          "type": "fund_item",
+          "text": "🔹大成港股精选+0.14%"
+        },
+        {
           "type": "featured_header",
-          "text": "🟥大成绩优科技基🟥"
+          "text": "🏆#大成绩优科技基"
         },
         {
           "type": "featured_item",
-          "text": "🟥大成科技创新-10.23%"
+          "text": "🟥大成领先动力-8.69%"
         },
         {
           "type": "featured_ytd",
-          "text": "📈今年以来➕44.94%💥"
+          "text": "📈今年以来➕48.92%💥"
         },
         {
           "type": "featured_item",
@@ -275,7 +291,7 @@
         }
       ],
       "footer": "（⚠️数据来源：wind，截至2026.7.28，基金有风险，投资需谨慎）",
-      "wechatText": "⭕️ 大成·招行2重点持营业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆＃首发产品\n🔹大成洞察优势+0.23%\n🔹大成元辰招利-0.19%\n🔹大成港股恒信+0.30%\n🔹大成汇享一年-0.18%\n🔹大成优享6个月-0.26%\n🏆#大成权益系列\n🔹大成高鑫股票-0.13%\n🔹大成优势企业-0.30%\n🟥大成绩优科技基🟥\n🟥大成科技创新-10.23%\n📈今年以来➕44.94%💥\n🟥大成至臻回报-9.21%\n📈今年以来➕33.96%💥\n—————\n【上证指数】 今日-1.16%\n【沪深300】 今日-2.83%\n【创业板指】 今日-7.35%\n（⚠️数据来源：wind，截至2026.7.28，基金有风险，投资需谨慎）"
+      "wechatText": "⭕️ 大成·招行重点持营业绩速览\n\n┈┈┈🌟🌟🌟🌟🌟 ┈┈┈\n🏆#二发固收+\n🔹大成优享6个月-0.26%\n🔹大成安享得利6个月-0.14%\n🔹大成元辰招利-0.19%\n🔹大成汇享一年-0.18%\n🏆＃首发启明星\n🔹大成洞察优势+0.23%\n🔹大成港股恒信+0.30%\n🏆#大成权益系列\n🔹大成高鑫股票-0.13%\n🔹大成优势企业-0.30%\n🔹大成港股精选+0.14%\n🏆#大成绩优科技基\n🟥大成领先动力-8.69%\n📈今年以来➕48.92%💥\n🟥大成至臻回报-9.21%\n📈今年以来➕33.96%💥\n—————\n【上证指数】 今日-1.16%\n【沪深300】 今日-2.83%\n【创业板指】 今日-7.35%\n（⚠️数据来源：wind，截至2026.7.28，基金有风险，投资需谨慎）"
     },
     {
       "id": "icbc",
@@ -284,7 +300,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -361,7 +377,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "featured_header",
@@ -430,7 +446,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "fund_item",
@@ -467,7 +483,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "featured_header",
@@ -536,7 +552,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -585,7 +601,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "featured_header",
@@ -670,7 +686,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -731,7 +747,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -796,7 +812,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -853,7 +869,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -926,7 +942,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -995,7 +1011,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -1068,7 +1084,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -1117,7 +1133,7 @@
       "asOf": "2026.7.28",
       "source": "wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "group",
@@ -1166,7 +1182,7 @@
       "asOf": "2026.7.28",
       "source": "Wind",
       "sourceUrl": "https://www.wind.com.cn",
-      "updatedAt": "2026-07-28 23:32",
+      "updatedAt": "2026-07-29 16:02",
       "lines": [
         {
           "type": "note",
