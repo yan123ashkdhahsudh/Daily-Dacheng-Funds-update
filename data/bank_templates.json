@@ -17,9 +17,9 @@
     {
       "bank_id": "cmb_2",
       "bank_name": "招行2",
-      "title": "大成·招行2重点持营业绩速览",
+      "title": "大成·招行重点持营业绩速览",
       "source": "wind",
-      "note": "首发产品及权益系列模板"
+      "note": "二发固收、首发启明星、权益系列及绩优科技基模板"
     },
     {
       "bank_id": "icbc",
@@ -346,6 +346,14 @@
     },
     {
       "bank_id": "cmb_1",
+      "line_order": 27.5,
+      "line_type": "fund_item",
+      "group_name": "重点持营固收加",
+      "template_text": "🔹大成月添利{daily_return}",
+      "note": ""
+    },
+    {
+      "bank_id": "cmb_1",
       "line_order": 28,
       "line_type": "group",
       "group_name": "启明星权益",
@@ -509,7 +517,7 @@
       "line_order": 48,
       "line_type": "title",
       "group_name": "",
-      "template_text": "⭕️ 大成·招行2重点持营业绩速览",
+      "template_text": "⭕️ 大成·招行重点持营业绩速览",
       "note": ""
     },
     {
@@ -524,53 +532,69 @@
       "bank_id": "cmb_2",
       "line_order": 50,
       "line_type": "group",
-      "group_name": "首发产品",
-      "template_text": "🏆＃首发产品",
+      "group_name": "二发固收+",
+      "template_text": "🏆#二发固收+",
       "note": ""
     },
     {
       "bank_id": "cmb_2",
       "line_order": 51,
       "line_type": "fund_item",
-      "group_name": "首发产品",
-      "template_text": "🔹大成洞察优势{daily_return}",
+      "group_name": "二发固收+",
+      "template_text": "🔹大成优享6个月{daily_return}",
       "note": ""
     },
     {
       "bank_id": "cmb_2",
       "line_order": 52,
       "line_type": "fund_item",
-      "group_name": "首发产品",
-      "template_text": "🔹大成元辰招利{daily_return}",
+      "group_name": "二发固收+",
+      "template_text": "🔹大成安享得利6个月{daily_return}",
       "note": ""
     },
     {
       "bank_id": "cmb_2",
       "line_order": 53,
       "line_type": "fund_item",
-      "group_name": "首发产品",
-      "template_text": "🔹大成港股恒信{daily_return}",
+      "group_name": "二发固收+",
+      "template_text": "🔹大成元辰招利{daily_return}",
       "note": ""
     },
     {
       "bank_id": "cmb_2",
       "line_order": 54,
       "line_type": "fund_item",
-      "group_name": "首发产品",
+      "group_name": "二发固收+",
       "template_text": "🔹大成汇享一年{daily_return}",
       "note": ""
     },
     {
       "bank_id": "cmb_2",
       "line_order": 55,
-      "line_type": "fund_item",
-      "group_name": "首发产品",
-      "template_text": "🔹大成优享6个月{daily_return}",
+      "line_type": "group",
+      "group_name": "首发启明星",
+      "template_text": "🏆＃首发启明星",
       "note": ""
     },
     {
       "bank_id": "cmb_2",
       "line_order": 56,
+      "line_type": "fund_item",
+      "group_name": "首发启明星",
+      "template_text": "🔹大成洞察优势{daily_return}",
+      "note": ""
+    },
+    {
+      "bank_id": "cmb_2",
+      "line_order": 57,
+      "line_type": "fund_item",
+      "group_name": "首发启明星",
+      "template_text": "🔹大成港股恒信{daily_return}",
+      "note": ""
+    },
+    {
+      "bank_id": "cmb_2",
+      "line_order": 58,
       "line_type": "group",
       "group_name": "大成权益系列",
       "template_text": "🏆#大成权益系列",
@@ -578,7 +602,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 57,
+      "line_order": 59,
       "line_type": "fund_item",
       "group_name": "大成权益系列",
       "template_text": "🔹大成高鑫股票{daily_return}",
@@ -586,7 +610,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 58,
+      "line_order": 60,
       "line_type": "fund_item",
       "group_name": "大成权益系列",
       "template_text": "🔹大成优势企业{daily_return}",
@@ -594,23 +618,31 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 59,
+      "line_order": 61,
+      "line_type": "fund_item",
+      "group_name": "大成权益系列",
+      "template_text": "🔹大成港股精选{daily_return}",
+      "note": ""
+    },
+    {
+      "bank_id": "cmb_2",
+      "line_order": 62,
       "line_type": "featured_header",
       "group_name": "大成绩优科技基",
-      "template_text": "🟥大成绩优科技基🟥",
+      "template_text": "🏆#大成绩优科技基",
       "note": ""
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 60,
+      "line_order": 63,
       "line_type": "featured_item",
       "group_name": "大成绩优科技基",
-      "template_text": "🟥大成科技创新{daily_return}",
+      "template_text": "🟥大成领先动力{daily_return}",
       "note": ""
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 61,
+      "line_order": 64,
       "line_type": "featured_ytd",
       "group_name": "大成绩优科技基",
       "template_text": "📈今年以来➕{period_return}💥",
@@ -618,7 +650,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 62,
+      "line_order": 65,
       "line_type": "featured_item",
       "group_name": "大成绩优科技基",
       "template_text": "🟥大成至臻回报{daily_return}",
@@ -626,7 +658,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 63,
+      "line_order": 66,
       "line_type": "featured_ytd",
       "group_name": "大成绩优科技基",
       "template_text": "📈今年以来➕{period_return}💥",
@@ -634,7 +666,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 64,
+      "line_order": 67,
       "line_type": "divider",
       "group_name": "",
       "template_text": "—————",
@@ -642,7 +674,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 65,
+      "line_order": 68,
       "line_type": "index",
       "group_name": "",
       "template_text": "【上证指数】 今日{index_return}",
@@ -650,7 +682,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 66,
+      "line_order": 69,
       "line_type": "index",
       "group_name": "",
       "template_text": "【沪深300】 今日{index_return}",
@@ -658,7 +690,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 67,
+      "line_order": 70,
       "line_type": "index",
       "group_name": "",
       "template_text": "【创业板指】 今日{index_return}",
@@ -666,7 +698,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "line_order": 68,
+      "line_order": 71,
       "line_type": "footer",
       "group_name": "",
       "template_text": "（⚠️数据来源：wind，截至{date}，基金有风险，投资需谨慎）",
@@ -2614,6 +2646,19 @@
     },
     {
       "bank_id": "cmb_1",
+      "fund_order": 10.5,
+      "group_name": "重点持营固收加",
+      "manager": "",
+      "fund_name": "大成月添利",
+      "fund_code": "090021",
+      "line_prefix": "🔹",
+      "update_method": "auto_return",
+      "period_label": "",
+      "metric_type": "daily_return",
+      "note": ""
+    },
+    {
+      "bank_id": "cmb_1",
       "fund_order": 11,
       "group_name": "启明星权益",
       "manager": "",
@@ -2719,10 +2764,10 @@
     {
       "bank_id": "cmb_2",
       "fund_order": 19,
-      "group_name": "首发产品",
+      "group_name": "二发固收+",
       "manager": "",
-      "fund_name": "大成洞察优势",
-      "fund_code": "024406",
+      "fund_name": "大成优享6个月",
+      "fund_code": "026037",
       "line_prefix": "🔹",
       "update_method": "auto_return",
       "period_label": "",
@@ -2732,7 +2777,20 @@
     {
       "bank_id": "cmb_2",
       "fund_order": 20,
-      "group_name": "首发产品",
+      "group_name": "二发固收+",
+      "manager": "",
+      "fund_name": "大成安享得利6个月",
+      "fund_code": "010940",
+      "line_prefix": "🔹",
+      "update_method": "auto_return",
+      "period_label": "",
+      "metric_type": "daily_return",
+      "note": ""
+    },
+    {
+      "bank_id": "cmb_2",
+      "fund_order": 21,
+      "group_name": "二发固收+",
       "manager": "",
       "fund_name": "大成元辰招利",
       "fund_code": "020676",
@@ -2744,21 +2802,8 @@
     },
     {
       "bank_id": "cmb_2",
-      "fund_order": 21,
-      "group_name": "首发产品",
-      "manager": "",
-      "fund_name": "大成港股恒信",
-      "fund_code": "025787",
-      "line_prefix": "🔹",
-      "update_method": "auto_return",
-      "period_label": "",
-      "metric_type": "daily_return",
-      "note": ""
-    },
-    {
-      "bank_id": "cmb_2",
       "fund_order": 22,
-      "group_name": "首发产品",
+      "group_name": "二发固收+",
       "manager": "",
       "fund_name": "大成汇享一年",
       "fund_code": "009796",
@@ -2771,10 +2816,10 @@
     {
       "bank_id": "cmb_2",
       "fund_order": 23,
-      "group_name": "首发产品",
+      "group_name": "首发启明星",
       "manager": "",
-      "fund_name": "大成优享6个月",
-      "fund_code": "026037",
+      "fund_name": "大成洞察优势",
+      "fund_code": "024406",
       "line_prefix": "🔹",
       "update_method": "auto_return",
       "period_label": "",
@@ -2784,6 +2829,19 @@
     {
       "bank_id": "cmb_2",
       "fund_order": 24,
+      "group_name": "首发启明星",
+      "manager": "",
+      "fund_name": "大成港股恒信",
+      "fund_code": "025787",
+      "line_prefix": "🔹",
+      "update_method": "auto_return",
+      "period_label": "",
+      "metric_type": "daily_return",
+      "note": ""
+    },
+    {
+      "bank_id": "cmb_2",
+      "fund_order": 25,
       "group_name": "大成权益系列",
       "manager": "",
       "fund_name": "大成高鑫股票",
@@ -2796,7 +2854,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "fund_order": 25,
+      "fund_order": 26,
       "group_name": "大成权益系列",
       "manager": "",
       "fund_name": "大成优势企业",
@@ -2809,11 +2867,24 @@
     },
     {
       "bank_id": "cmb_2",
-      "fund_order": 26,
+      "fund_order": 27,
+      "group_name": "大成权益系列",
+      "manager": "",
+      "fund_name": "大成港股精选",
+      "fund_code": "011583",
+      "line_prefix": "🔹",
+      "update_method": "auto_return",
+      "period_label": "",
+      "metric_type": "daily_return",
+      "note": ""
+    },
+    {
+      "bank_id": "cmb_2",
+      "fund_order": 28,
       "group_name": "大成绩优科技基",
       "manager": "",
-      "fund_name": "大成科技创新",
-      "fund_code": "008988",
+      "fund_name": "大成领先动力",
+      "fund_code": "020821",
       "line_prefix": "🟥",
       "update_method": "auto_return",
       "period_label": "今年以来",
@@ -2822,7 +2893,7 @@
     },
     {
       "bank_id": "cmb_2",
-      "fund_order": 27,
+      "fund_order": 29,
       "group_name": "大成绩优科技基",
       "manager": "",
       "fund_name": "大成至臻回报",
