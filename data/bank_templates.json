@@ -762,6 +762,14 @@
     },
     {
       "bank_id": "icbc",
+      "line_order": 75.5,
+      "line_type": "fund_item",
+      "group_name": "次新基金",
+      "template_text": "刘淼｜大成国证价值100{daily_return}",
+      "note": ""
+    },
+    {
+      "bank_id": "icbc",
       "line_order": 76,
       "line_type": "group",
       "group_name": "大成绩优权益持营",
@@ -1838,6 +1846,22 @@
       "line_type": "stars",
       "group_name": "",
       "template_text": "┈┈┈🌟🌟🌟🌟🌟 ┈┈┈",
+      "note": ""
+    },
+    {
+      "bank_id": "nbcb",
+      "line_order": 204.2,
+      "line_type": "group",
+      "group_name": "首发固收+",
+      "template_text": "＃首发固收+",
+      "note": ""
+    },
+    {
+      "bank_id": "nbcb",
+      "line_order": 204.3,
+      "line_type": "fund_item",
+      "group_name": "首发固收+",
+      "template_text": "成琦｜大成天宁{daily_return}",
       "note": ""
     },
     {
@@ -2958,6 +2982,19 @@
     },
     {
       "bank_id": "icbc",
+      "fund_order": 31.5,
+      "group_name": "次新基金",
+      "manager": "刘淼",
+      "fund_name": "大成国证价值100",
+      "fund_code": "026935",
+      "line_prefix": "",
+      "update_method": "auto_return",
+      "period_label": "",
+      "metric_type": "daily_return",
+      "note": ""
+    },
+    {
+      "bank_id": "icbc",
       "fund_order": 32,
       "group_name": "大成绩优权益持营",
       "manager": "刘旭",
@@ -3522,6 +3559,19 @@
       "manager": "柏杨",
       "fund_name": "大成港股通机遇",
       "fund_code": "024159",
+      "line_prefix": "",
+      "update_method": "auto_return",
+      "period_label": "",
+      "metric_type": "daily_return",
+      "note": ""
+    },
+    {
+      "bank_id": "nbcb",
+      "fund_order": 72.5,
+      "group_name": "首发固收+",
+      "manager": "成琦",
+      "fund_name": "大成天宁",
+      "fund_code": "026972",
       "line_prefix": "",
       "update_method": "auto_return",
       "period_label": "",
